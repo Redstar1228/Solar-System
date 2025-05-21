@@ -1,0 +1,282 @@
+<html>
+<head>
+    <title>Solar System</title>
+    <style>
+    body {
+        background-color: #0E0E0E
+    }
+    .sun {
+        animation: glow 3s linear infinite alternate;
+        background-color: #f1e953;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%)
+    }
+    .line1 {
+        border: 0.1px solid lightgray;
+        width: 135px;
+        height: 135px;
+        border-radius: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+    .orb1 {
+        animation: rotate 2s linear infinite;
+        position: fixed;
+        top: 50%;
+        left: 50%
+    }
+    .planet1 {
+        background-color: #6E6E58;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        border-radius: 100%;
+        transform: translate(56px)
+    }
+    .line2 {
+        border: 0.1px solid lightgray;
+        width: 190px;
+        height: 190px;
+        border-radius: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+    .orb2 {
+        animation: rotate 2.5s linear infinite;
+        position: fixed;
+        top: 50%;
+        left: 50%
+    }
+    .planet2 {
+        background-color: #A3987B;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        border-radius: 100%;
+        transform: translate(80px)
+    }
+    .line3 {
+        border: 0.1px solid lightgray;
+        width: 256px;
+        height: 256px;
+        border-radius: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+    .orb3 {
+        animation: rotate 2.7s linear infinite;
+        position: fixed;
+        top: 50%;
+        left: 50%
+    }
+    .planet3 {
+        background: linear-gradient(to right, lime, lightblue 70%);
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        border-radius: 100%;
+        transform: translate(111px)
+    }
+    .line4 {
+        border: 0.1px solid lightgray;
+        width: 320px;
+        height: 320px;
+        border-radius: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+    .orb4 {
+        animation: rotate 3s linear infinite;
+        position: fixed;
+        top: 50%;
+        left: 50%
+    }
+    .planet4 {
+        background-color: #B22222;
+        width: 33px;
+        height: 33px;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        border-radius: 100%;
+        transform: translate(144px)
+    }
+    .line5 {
+        border: 0.1px solid lightgray;
+        width: 420px;
+        height: 420px;
+        border-radius: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+    .orb5 {
+        animation: rotate 3.8s linear infinite;
+        position: fixed;
+        top: 50%;
+        left: 50%
+    }
+    .planet5 {
+        background-color: #D2691E;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        border-radius: 100%;
+        transform: translate(184px)
+    }
+    .moonline {
+        border: 0.1px solid lightgray;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+    .moonorb {
+        animation: rotate 0.303s linear infinite;
+        position: absolute;
+        top: 50%;
+        left: 50%
+    }
+    .moon {
+        background-color: gray;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        border-radius: 100%;
+        transform: translate(15px)
+    }
+    .mars1line {
+        border: 0.1px solid lightgray;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+    .mars2line {
+        border: 0.1px solid lightgray;
+        width: 55px;
+        height: 55px;
+        border-radius: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+    .marsorb1 {
+        animation: rotate 0.606s linear infinite;
+        position: absolute;
+        top: 50%;
+        left: 50%
+    }
+    .marsorb2 {
+        animation: rotate 1.1s linear infinite;
+        position: absolute;
+        top: 50%;
+        left: 50%
+    }
+    .mars1 {
+        background-color: gray;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        border-radius: 100%;
+        transform: translate(13px)
+    }
+    .mars2 {
+        background-color: gray;
+        width: 7px;
+        height: 7px;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        border-radius: 100%;
+        transform: translate(24px)
+    }
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg)
+        }
+        to {
+            transform: rotate(360deg)
+        }
+    }
+    @keyframes glow {
+        from {
+            box-shadow: 0px 0px 120px yellow
+        }
+        to {
+           box-shadow: 0px 0px 100px #FFC900
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class = "sun"></div>
+    <div class = "line1"></div>
+    <div class = "line2"></div>
+    <div class = "line3"></div>
+    <div class = "line4"></div>
+    <div class = "line5"></div>
+    <div class = "orb1"><div class = "planet1"></div></div>
+    <div class = "orb2"><div class = "planet2"></div></div>
+    <div class = "orb3">
+        <div class = "planet3">
+            <div class = "moonline">
+            </div>
+            <div class = "moonorb">
+            <div class = "moon">
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class = "orb4">
+        <div class = "planet4">
+            <div class = "mars1line">
+            </div>
+            <div class = "mars2line">
+            </div>
+            <div class = "marsorb1">
+                <div class = "mars1">
+                </div>
+            </div>
+            <div class = "marsorb2">
+                <div class = "mars2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "orb5"><div class = "planet5"></div></div>
+</body>
+</html>
